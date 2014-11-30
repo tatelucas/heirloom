@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*
+.container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/bg2.jpg) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.logo {
+    width: 295px;
+    height: 113px;
+}
+
+.content {
+    width: 295px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -147px;
+    position: absolute;
+}
+*/
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.heirloombg {
+  background-image: url(../img/bgjs.jpg);
+  opacity: 0;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 200ms;
+}
+
+.heirloombg.visible {
+  opacity: 1;
+}
+
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+/* content centering styles */
+.content-a {
+    display:table;
+}
+.content-b {
+    display:table-cell;
+    position:relative;
+    vertical-align:middle;
+    text-align:center;
+}
+
+/* visual styles */
+body{
+    margin:0;
+    font-family:sans-serif;
+    font-size:28px;
+    line-height:100px;
+    color:#ffffff;
+    text-align:center;
+}
+section {
+    background:#9ed100;
+}
+.not-fullscreen {
+    height:50%;
+}
+
+.logo {
+    width: 295px;
+    height: 113px;
+}
