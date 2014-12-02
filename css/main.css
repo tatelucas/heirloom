@@ -35,16 +35,6 @@
 
 .heirloombg {
   background-image: url(../img/bgjs.jpg);
-  opacity: 0;
-  -webkit-animation-name: fade-in;
-  -webkit-animation-duration: 500ms;
-  -webkit-animation-timing-function: ease-in;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-delay: 200ms;
-}
-
-.heirloombg.visible {
-  opacity: 1;
 }
 
 /* background setup */

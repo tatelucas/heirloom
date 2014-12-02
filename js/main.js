@@ -47,10 +47,6 @@ $( document ).ready(function() {
   /* fix vertical when not overflow
   call fullscreenFix() if .fullscreen content changes */
 
-  $('.heirloombg').on('webkitAnimationEnd', function(e) {
-    $(this).addClass('visible');
-  });
-
   $(window).resize(fullscreenFix);
   fullscreenFix();
 
