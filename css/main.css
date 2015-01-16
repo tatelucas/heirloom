@@ -2,32 +2,6 @@
    Author's custom styles
    ========================================================================== */
 
-/*
-.container {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url(../img/bg2.jpg) center center no-repeat;
-    background-size: cover;
-    position: absolute;
-}
-
-.logo {
-    width: 295px;
-    height: 113px;
-}
-
-.content {
-    width: 295px;
-    height: 200px;
-    top: 50%;
-    left: 50%;
-    margin: -100px 0 0 -147px;
-    position: absolute;
-}
-*/
-
 @-webkit-keyframes fade-in {
   0%   { opacity: 0; }
   100% { opacity: 1; }
@@ -79,10 +53,23 @@ html, body {
 body{
     margin:0;
     font-family:sans-serif;
-    font-size:28px;
-    line-height:100px;
+    font-size: .9em;
     color:#ffffff;
     text-align:center;
+    font-family: "brandon-grotesque",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.15);
+}
+a {
+    color:#ffffff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body.home {
+    line-height:100px;
 }
 section {
     background:#9ed100;
@@ -94,4 +81,33 @@ section {
 .logo {
     width: 310px;
     height: auto;
+}
+
+.schedule h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 3px;
+    height: auto;
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 1em 0;
+    letter-spacing: 2px;
+    font-size: .8em;
+    line-height: 1.75;
+}
+.upper {
+    text-transform: uppercase;
+}
+.linebreak {
+    font-size: 18px;
+    text-align: center;
+}
+
+.half-push-bottom {
+    margin-bottom: .5em;
 }
