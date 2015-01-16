@@ -84,7 +84,7 @@ section {
 }
 
 .schedule {
-    padding-top: 50px;
+    padding: 50px 0;
 }
 .schedule h1 {
     text-transform: uppercase;
